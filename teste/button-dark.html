@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Pra você</title>
+    <style>
+        body{
+            background-color: #000019;
+        }
+        
+        .square{
+            background-color: #060028;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            align-items: justify;
+            border: solid 2px #ffeaff;
+            margin: auto;
+            margin-top: 100px;
+            border-radius: 50px;
+            width: 800px;
+            height: 500px;
+            display: grid;
+        }
+        
+        .lorem{
+            color: #ffeaff;
+            font-family: "Roboto Mono", monospace;
+            text-align: center;
+            padding-top: 50px;
+            font-size: 50px;
+        }
+        
+        .clique{
+            font-size: 50px;
+            border: solid 2px #eaeaff;
+            color: #fff;
+            border-radius: 15px;
+            background-color: #060028;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            margin: auto;
+            margin-bottom: 175px;
+            padding-top: 20px;
+            padding-right: 20px;
+            padding-left: 20px;
+            padding-bottom: 20px;
+        }
+        
+        #textField{
+            margin: auto;
+            margin-top: 100px;
+            border: solid 2px black;
+            background-color: #060028;            
+            width: 500px;
+            height: 700px;
+            border: solid 2px #ffeaff;
+            border-radius: 50px;
+            align-items: auto;
+        }
+        
+        .mensagem{
+            font-family: "Roboto Mono", monospace;
+            font-size: 35px;
+            margin-top: 75px;
+            text-align: center;
+            color: #ffeaff;
+        }
+        
+        .gato-rosas, .gato-rosa{
+            width: 200px;
+            height: 200px;
+            border-radius: 50px;
+            margin-left: 30px;
+            margin-top: 25px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="square">
+        <h1 class="lorem">Clique no botão
+        <br>
+        &#8595
+        </h1>
+        <button class="clique" onclick="clicou()">CLIQUE AQUI</button></button>
+    </div>
+    
+    <div id="textField" style="display: none;">
+        <img src="gato-rosas.jpg" alt="gato com rosas" class="gato-rosas">
+        <img src="gato-rosa.jpg" alt="gato com rosa" class="gato-rosa">
+        
+        <p class="mensagem">Para Aristóteles, a perfeição está no equilíbrio, <br> já para mim a perfeição está <br> em seu <strong>olhos!</strong> <br> 🤭🌹</p>
+        <audio id="vid">
+            <source src="rizz-song.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+    
+    <script>
+        function clicou() {
+            var text = document.getElementById("textField");
+            text.style.display = "block";
+            document.getElementById('vid').play();
+        }
+    </script>
+</body>
+</html>
