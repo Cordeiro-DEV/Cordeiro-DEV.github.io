@@ -1,0 +1,91 @@
+@charset "UTF-8"
+
+* {
+    font-family: "neo-sans";
+	ont-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: url("https://use.typekit.net/af/b07eb4/00000000000000007735bb57/30/l?primer=83aaf8b3086dc5b082c9b97866118e90ec8a0116a2f1fa26fea125d379f2cd21&fvd=n7&v=3");
+    format("woff2");
+}
+
+body {
+    background-color: rgb(3, 62, 78);
+}
+
+.logo {
+    margin: 15px;
+}
+
+.linguages {
+    background-color: rgb(3, 62, 78);
+    color: white;
+    border: transparent;
+    position: relative;
+    text-align: center;
+}
+
+.google, .apple, .facebook, .email {
+    padding: 25px;
+    width: 400px;
+    border-radius: 35px;
+    border: transparent;
+}
+
+.google:hover, .apple:hover, .facebook:hover{
+    transform: scale(105%);
+    border-radius: 35px;
+    border: transparent;
+}
+
+.email:hover {
+    border-radius: 35px;
+    transform: scale(105%);
+    border: solid 2px rgba(255, 255, 255, 0.116);
+}
+
+.google {
+    background-color: #fff;
+    color: #000;
+}
+
+.apple {
+    background-color: rgb(1, 16, 21);
+    color: #fff;
+}
+
+.facebook {
+    background-color: #4267B2;
+    color: #fff;
+}
+
+.email {
+    background-color: transparent;
+    color: #fff;
+    border: solid 2px rgba(255, 255, 255, 0.116);
+}
+
+.option-group {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+}
+  
+.option-group img {
+    margin-left: 15px;
+}
+
+.sign-up {
+    color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 22.5px;
+    margin-bottom: 30px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
